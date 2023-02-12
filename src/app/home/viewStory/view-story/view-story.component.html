@@ -1,0 +1,13 @@
+<div class="storyView">
+   <div class="storyCard">
+      <h1>{{article?.title}}</h1>
+      <div class="contentRow">
+         <img [src]="article?.urlToImage" alt="image">
+         <div>{{article?.content}}</div>
+      </div>
+      <div class="cardFooter">
+         <div>Author: {{article?.author}}</div>
+         <div>Source article: <a [href]="article?.url">here</a></div>
+      </div>
+   </div>
+</div>

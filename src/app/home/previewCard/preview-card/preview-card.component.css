@@ -1,0 +1,10 @@
+.previewCard {
+    border: 1px solid black;
+    padding: 1em;
+    margin: 0.5em 0.1em 0.5em 0.1em;
+    cursor: pointer;
+}
+
+.previewCard:hover {
+    opacity: 0.6;
+}

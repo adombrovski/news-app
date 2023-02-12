@@ -1,0 +1,55 @@
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4em;
+    padding: 0 1em 0 1em;
+}
+
+.logOutBnt {
+    width: 4em;
+    height: 2em;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logOutBnt:hover {
+    background-color: black;
+    color: white;
+}
+
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.errorMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 15em;
+    min-height: 7em;
+    background-color: red;
+    color: white;
+    padding: 1em;
+}
+
+.searchContainer {
+    display: flex;
+    margin-right: 5em;
+
+}
+
+.searchContainer>div {
+    width: 4em;
+    height: 2em;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

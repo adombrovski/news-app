@@ -1,0 +1,19 @@
+<div class="homePage">
+    <div class="navBar" role="navigation">
+        <div class="searchContainer">
+            <input placeholder="Add keyword" #search (keyup)="saveKeyword(search.value)" />
+            <div role="button" (click)="getArticlesByKeyword()">submit</div>
+        </div>
+        <div class="logOutBnt" role="button" (click)="redirectLogIn()">Logout</div>
+    </div>
+    <ng-container *ngIf="!(getLoadingError$() | async)">
+        <ng-container *ngFor="let article of (getArticles$() | async); index as i">
+            <app-preview-card [article]="article" (click)="redirectStoryView(i)"></app-preview-card>
+        </ng-container>
+    </ng-container>
+    <div class="errorContainer" *ngIf="(getLoadingError$() | async)">
+        <p class="errorMessage">
+            {{getLoadingError$() | async}}
+        </p>
+    </div>
+</div>
